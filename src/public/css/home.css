@@ -1,0 +1,522 @@
+/* GENERAL */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ebebeb;
+
+
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 12px;
+}
+
+/* HEADER */
+
+div .top-header {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5%;
+
+}
+
+header {
+  background-color: #eac926;
+
+}
+
+header div.logo {
+  padding: 10px;
+}
+
+header ul li {
+  list-style: none;
+
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+  padding: 5px 0px;
+
+}
+
+header nav {
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+
+/* BARRA DE BUSQUEDA */
+.barra-busqueda {
+  display: flex;
+  width: 70%;
+  margin: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #333;
+  color: #0022AA;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+
+
+header div.top-header p {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.img-logo {
+  width: 200px;
+}
+
+.copy-header {
+  font-weight: 400px;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+
+}
+
+
+
+/*icono hamburges*/
+div .burger-menu {
+  text-align: center;
+
+
+}
+
+div.burger-menu i {
+  background-color: #0044aa;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  height: 40px;
+  margin: 10px 0px 20px 0px;
+  padding: 10px;
+  width: 40px;
+  text-align: center;
+  display: block;
+
+}
+
+.banner-img {
+  width: 100%;
+}
+
+/* Main */
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.precio {
+  font-size: 18px;
+  width: 30%;
+}
+
+.descuentos {
+  width: 70%;
+}
+
+.descuentos,
+.descripcion {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+h3,
+.descripcion {
+  color: #666;
+}
+
+.descripcion {
+  display: none;
+  margin-top: 20px;
+}
+
+section .banner img {
+  width: 100%;
+}
+
+main section h3 {
+  margin: 20px 0px;
+}
+
+main section article {
+  background-color: #fff;
+  margin: 10px 0px;
+  width: 200px;
+ position: relative;
+  
+}
+
+.img-productos {
+  width: 100%
+}
+
+.productos {
+  display: flex;
+  justify-content: space-around;
+flex-wrap: wrap;
+
+}
+
+
+main section articule i,
+.descuentos {
+  color: #39b54a;
+}
+
+main section article i {
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  color: #39b54a;
+  border-radius: 50%;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  align-self: self-end;
+}
+
+.icono{
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  align-items: center;
+ 
+
+}
+
+main section h3 {
+  margin: 20px 0px;
+}
+
+
+
+main article {
+  margin: 10px;
+  width: 250px;
+}
+
+.main_articulo {
+  border-top: 1px solid #ebebeb;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  border-top: 1px solid #ebebeb;
+  position: relative;
+  padding: 15px;
+}
+
+
+main section article .descripcion {
+  position: relative;
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+main section article:hover .descripcion {
+  opacity: 1;
+}
+
+/* End MD1-1 */
+main section div.productos article {
+  width: 22%;
+  box-shadow: none;
+}
+
+/* MD1-2 */
+main section div.productos article {
+  width: 22%;
+  box-shadow: none;
+  transition: box-shadow 300ms;
+  cursor: pointer;
+}
+
+main section div.productos article:hover {
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+/* End MD1-2 */
+
+/* MD1-3 */
+main section div.productos article .fa-truck {
+  transition: transform 300ms;
+}
+
+main section div.productos article:hover .fa-truck {
+  transform: rotate(-90deg);
+}
+
+/* End MD1-3 */
+
+
+/* MD2 */
+main.login form button {
+  transition: color, background-color 300ms;
+}
+
+main.login form button:hover {
+  background-color: #0022AA;
+  color: #ffffff;
+}
+
+
+/* FORMULARIO */
+
+.formulario {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="password"],
+select,
+button,
+input[type="file"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+select[multiple] {
+  height: 100px;
+}
+
+button {
+  background-color: #1259c3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button[type="reset"] {
+  background-color: #f00;
+}
+
+.categorias {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+/* BOTONES */
+button {
+  background-color: #1259c3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.reset {
+  background-color: red;
+}
+
+/* CHECKBOX */
+.checkbox {
+  margin: 0px 0px 5px 5px;
+}
+
+/* FOOTER */
+footer{
+  background-color: #fff;
+}
+.footer1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+footer div i{
+  text-align: center;
+  color:#0022AA;
+  font-size: 25px;
+}
+footer div p{
+  padding: 10px;
+  margin: 0px 10px 0px 10px;
+  font-size: 15px;
+}
+.copyright{
+  text-align: center;
+  padding: 10px;
+  margin: 10px 0px 10px 10px;
+}
+#footer-login{
+ position: absolute;
+ width: 100%;
+ margin-top: 300px; 
+}
+
+/* End MD2 */
+
+@media (min-width: 361px) {
+  nav {
+    display: none;
+  }
+
+  main section article .descripcion {
+    display: block;
+  }
+
+  main section article {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+}
+
+@media (min-width: 768px) {
+
+
+  header .form .input {
+    width: 100%;
+    height: 50%;
+  }
+
+  header .form .input .submit {
+    border: solid 1px #000;
+    width: 100%;
+    height: 50%;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .top-headear {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .copy-header {
+    max-width: 350px;
+    text-align: right;
+    margin: 10px;
+  }
+
+  header nav {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  header nav ul {
+    display: flex;
+  }
+
+  header nav ul li {
+    margin: 5px;
+  }
+
+  header nav ul li i {
+    margin: 2px;
+  }
+
+  
+  .productos{
+    display: flex;
+    flex-wrap: wrap;
+  }
+.main_articulo{
+  width: 50%; /* Por ejemplo, asigna un ancho del 50% a los elementos para que haya dos en una fila */
+  min-width: 300px; /* Establece un ancho mínimo para evitar que se colapsen antes de 600px */
+  box-sizing: border-box;
+ 
+  
+}
+}
+
+@media(min-width: 1200px) {
+  
+  .top-headear,
+  nav {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .top-headear {
+    align-items: center;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    font-size: 19px;
+  }
+  
+  .copy-header {
+    max-width: none;
+    font-size: 22px;
+    margin: 0;
+  }
+  
+  .logo {
+    width: 250px;
+  }
+}
