@@ -79,10 +79,11 @@ button {
 
 
 
-header div.top-header h2 {
+header div.top-header p {
   width: 40%;
   text-align: center;
   margin-top: 10px;
+  font-weight: 20px;
 }
 
 
@@ -420,10 +421,13 @@ footer div p{
 
 /* End MD2 */
 
+
+
 @media (min-width: 361px) {
   nav {
     display: none;
   }
+
 
   main section article .descripcion {
     display: block;
@@ -450,7 +454,7 @@ footer div p{
     height: 50%;
   }
 
-  .burger-menu {
+  div.burger-menu{
     display: none;
   }
 
@@ -460,11 +464,6 @@ footer div p{
 
   }
 
-  .copy-header {
-    max-width: 350px;
-    text-align: right;
-    margin: 10px;
-  }
 
   header nav {
     display: flex;
@@ -491,7 +490,7 @@ footer div p{
   }
 .main_articulo{
   width: 50%; /* Por ejemplo, asigna un ancho del 50% a los elementos para que haya dos en una fila */
-  min-width: 300px; /* Establece un ancho mínimo para evitar que se colapsen antes de 600px */
+ min-width: 300px; /* Establece un ancho mínimo para evitar que se colapsen antes de 600px */
   box-sizing: border-box;
  
   
@@ -499,6 +498,7 @@ footer div p{
 }
 
 @media(min-width: 1200px) {
+  
   
   .top-headear,
   nav {
@@ -518,11 +518,6 @@ footer div p{
     font-size: 19px;
   }
   
-  .copy-header {
-    max-width: none;
-    font-size: 22px;
-    margin: 0;
-  }
   
   .logo {
     width: 250px;
