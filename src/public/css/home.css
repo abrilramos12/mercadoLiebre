@@ -213,6 +213,8 @@ main section article i {
   position: relative;
   justify-content: flex-end;
   align-items: center;
+  top: 15px;
+  z-index: 1;
  
 
 }
