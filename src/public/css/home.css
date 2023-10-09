@@ -22,7 +22,7 @@ p {
 
 /* HEADER */
 
-div .top-header {
+div.top-header {
   display: flex;
   flex-wrap: wrap;
   padding: 5%;
@@ -79,20 +79,17 @@ button {
 
 
 
-header div.top-header p {
-  width: 100%;
+header div.top-header h2 {
+  width: 40%;
   text-align: center;
   margin-top: 10px;
 }
+
 
 .img-logo {
   width: 200px;
 }
 
-.copy-header {
-  font-weight: 400px;
-  text-align: center;
-}
 
 .form {
   display: flex;
@@ -105,14 +102,22 @@ header div.top-header p {
 
 
 /*icono hamburges*/
-div .burger-menu {
+
+div.burger-menu {
+  
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 
 }
 
 div.burger-menu i {
-  background-color: #0044aa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0022AA;
   border-radius: 5px;
   color: #fff;
   font-size: 20px;
@@ -120,10 +125,9 @@ div.burger-menu i {
   margin: 10px 0px 20px 0px;
   padding: 10px;
   width: 40px;
-  text-align: center;
-  display: block;
 
-}
+} 
+/* --------------------------------------------- */
 
 .banner-img {
   width: 100%;
@@ -428,6 +432,8 @@ footer div p{
   main section article {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
+  
+
 }
 
 @media (min-width: 768px) {
