@@ -176,7 +176,7 @@ main section h3 {
 main section article {
   background-color: #fff;
   margin: 10px 0px;
-  width: 200px;
+  width: 100%;
  position: relative;
   
 }
@@ -186,8 +186,8 @@ main section article {
 }
 
 .productos {
-  display: flex;
-  justify-content: space-around;
+display: flex;
+justify-content: space-around;
 flex-wrap: wrap;
 
 }
@@ -257,15 +257,10 @@ main section article:hover .descripcion {
   opacity: 1;
 }
 
-/* End MD1-1 */
-main section div.productos article {
-  width: 22%;
-  box-shadow: none;
-}
 
 /* MD1-2 */
 main section div.productos article {
-  width: 22%;
+  width: 100%;
   box-shadow: none;
   transition: box-shadow 300ms;
   cursor: pointer;
@@ -423,7 +418,7 @@ footer div p{
 
 
 
-@media (min-width: 361px) {
+@media (max-width: 426px) {
   nav {
     display: none;
   }
@@ -433,14 +428,22 @@ footer div p{
     display: block;
   }
 
-  main section article {
+  main section div.productos article {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    width: 45%;
   }
+
+
+  .parrafo-compras{
+    display: none;
+  }
+
+
   
 
 }
 
-@media (min-width: 768px) {
+@media (max-width: 769px) {
 
 
   header .form .input {
@@ -483,17 +486,20 @@ footer div p{
     margin: 2px;
   }
 
-  
-  .productos{
-    display: flex;
-    flex-wrap: wrap;
-  }
+  main section div.productos article{
+    width: 22%;
+  }   
+ 
 .main_articulo{
   width: 50%; /* Por ejemplo, asigna un ancho del 50% a los elementos para que haya dos en una fila */
  min-width: 300px; /* Establece un ancho mínimo para evitar que se colapsen antes de 600px */
   box-sizing: border-box;
  
   
+}
+footer{
+display: flex;
+flex-direction: column;
 }
 }
 

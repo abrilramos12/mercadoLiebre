@@ -25,8 +25,9 @@ app.post('/register', (req, res) => {
 });
 
 
-const port = 3030;
+const port = process.env.PORT || 3030; //Buena practica que las variables de entorno es buena practica que este en mayuscula 
 app.listen(port, () => {
     console.log(`Servidor iniciado en http://localhost:${port}`);
 });
+
 
