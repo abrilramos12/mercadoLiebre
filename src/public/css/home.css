@@ -102,7 +102,7 @@ header div.top-header p {
 
 
 
-/*icono hamburges*/
+/*icono hamburgesa*/
 
 div.burger-menu {
   
@@ -386,13 +386,13 @@ button {
 footer{
   background-color: #fff;
 }
-.footer1{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-}
 
+.footer1{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   text-align: center;
+ } 
 footer div i{
   text-align: center;
   color:#0022AA;
@@ -418,11 +418,10 @@ footer div p{
 
 
 
-@media (max-width: 426px) {
+@media (min-width: 426px) {
   nav {
     display: none;
   }
-
 
   main section article .descripcion {
     display: block;
@@ -433,17 +432,21 @@ footer div p{
     width: 45%;
   }
 
-
-  .parrafo-compras{
+  .parrafo-compras {
     display: none;
   }
+/* 
+  .footer1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-
-  
-
+  .footer-item {
+    margin: 5px;
+  } */
 }
-
-@media (max-width: 769px) {
+@media (min-width: 769px) {
 
 
   header .form .input {
@@ -456,52 +459,49 @@ footer div p{
     width: 100%;
     height: 50%;
   }
-
+  
   div.burger-menu{
     display: none;
   }
-
+  
   .top-headear {
     display: flex;
     justify-content: space-between;
-
+    
   }
-
-
+  
+  
   header nav {
     display: flex;
     justify-content: space-between;
-
+    
   }
-
+  
   header nav ul {
     display: flex;
   }
-
+  
   header nav ul li {
     margin: 5px;
   }
-
+  
   header nav ul li i {
     margin: 2px;
   }
-
+  
   main section div.productos article{
     width: 22%;
   }   
- 
-.main_articulo{
-  width: 50%; /* Por ejemplo, asigna un ancho del 50% a los elementos para que haya dos en una fila */
- min-width: 300px; /* Establece un ancho mínimo para evitar que se colapsen antes de 600px */
-  box-sizing: border-box;
- 
   
+  .main_articulo{
+    width: 50%; /* Por ejemplo, asigna un ancho del 50% a los elementos para que haya dos en una fila */
+    min-width: 300px; /* Establece un ancho mínimo para evitar que se colapsen antes de 600px */
+    box-sizing: border-box;
+  }
+
 }
-footer{
-display: flex;
-flex-direction: column;
-}
-}
+
+
 
 @media(min-width: 1200px) {
   
@@ -528,4 +528,6 @@ flex-direction: column;
   .logo {
     width: 250px;
   }
+
 }
+
