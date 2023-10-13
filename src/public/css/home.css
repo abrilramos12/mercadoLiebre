@@ -25,6 +25,7 @@ p {
 div.top-header {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   padding: 5%;
 
 }
@@ -49,13 +50,13 @@ header ul li a {
   display: inline-block;
   padding: 5px 0px;
 
+
 }
 
 header nav {
   font-size: 12px;
   margin-left: 20px;
 }
-
 
 /* BARRA DE BUSQUEDA */
 .barra-busqueda {
@@ -96,7 +97,7 @@ header div.top-header p {
   display: flex;
   justify-content: center;
   align-items: center;
- 
+
 
 }
 
@@ -105,7 +106,7 @@ header div.top-header p {
 /*icono hamburgesa*/
 
 div.burger-menu {
-  
+
   text-align: center;
   display: flex;
   justify-content: center;
@@ -127,7 +128,8 @@ div.burger-menu i {
   padding: 10px;
   width: 40px;
 
-} 
+}
+
 /* --------------------------------------------- */
 
 .banner-img {
@@ -177,8 +179,9 @@ main section article {
   background-color: #fff;
   margin: 10px 0px;
   width: 100%;
- position: relative;
-  
+  position: relative;
+
+
 }
 
 .img-productos {
@@ -186,9 +189,10 @@ main section article {
 }
 
 .productos {
-display: flex;
-justify-content: space-around;
-flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
 
 }
 
@@ -213,14 +217,14 @@ main section article i {
   align-self: self-end;
 }
 
-.icono{
+.icono {
   display: flex;
   position: relative;
   justify-content: flex-end;
   align-items: center;
   top: 15px;
   z-index: 1;
- 
+
 
 }
 
@@ -230,10 +234,6 @@ main section h3 {
 
 
 
-main article {
-  margin: 10px;
-  width: 250px;
-}
 
 .main_articulo {
   border-top: 1px solid #ebebeb;
@@ -383,42 +383,44 @@ button {
 }
 
 /* FOOTER */
-footer{
+footer {
   background-color: #fff;
 }
 
-.footer1{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   text-align: center;
- } 
-footer div i{
+.footer1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
-  color:#0022AA;
+}
+
+footer div i {
+  text-align: center;
+  color: #0022AA;
   font-size: 25px;
 }
-footer div p{
+
+footer div p {
   padding: 10px;
   margin: 0px 10px 0px 10px;
   font-size: 15px;
 }
-.copyright{
+
+.copyright {
   text-align: center;
   padding: 10px;
   margin: 10px 0px 10px 10px;
 }
-#footer-login{
- position: absolute;
- width: 100%;
- margin-top: 300px; 
+
+#footer-login {
+  position: absolute;
+  width: 100%;
+  margin-top: 300px;
 }
 
 /* End MD2 */
 
-
-
-@media (min-width: 426px) {
+@media (min-width: 321px) {
   nav {
     display: none;
   }
@@ -500,6 +502,15 @@ footer div p{
   }
 
 }
+@media (max-width:800px) {
+  /* ACA EMPIEZA EL FOOTER */
+  .footer1{
+    flex-direction: column;
+    align-items: center;
+  }
+  /* ACA TERMINA EL FOOTER */
+}
+
 
 
 
@@ -530,4 +541,3 @@ footer div p{
   }
 
 }
-
